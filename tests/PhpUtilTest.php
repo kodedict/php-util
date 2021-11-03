@@ -17,7 +17,7 @@ class PhpUtilTest extends TestCase
 
     public function test_random_number()
     {
-        $rand = PhpUtil::randomNumber('1','5',5);
+        $rand = PhpUtil::randomNumber('1', '5', 5);
 
         $this->assertEquals(5, strlen($rand));
     }
@@ -31,10 +31,10 @@ class PhpUtilTest extends TestCase
 
     public function test_unique_reference()
     {
-        $uniqueReference = PhpUtil::generateUniqueReference('10','kd_');
+        $uniqueReference = PhpUtil::generateUniqueReference('10', 'kd_');
 
         $this->assertEquals(13, strlen($uniqueReference));
 
-        $this->assertStringContainsString('kd_',$uniqueReference);
+        $this->assertStringContainsString('kd_', $uniqueReference);
     }
 }

@@ -3,7 +3,6 @@
 
 namespace KodeDict\PHPUtil\Traits\RandomGenerator;
 
-
 trait RandomNumber
 {
 
@@ -18,6 +17,7 @@ trait RandomNumber
         $numbers = range($numberFrom, $numberTo);
         shuffle($numbers);
         $rand = array_slice($numbers, 0, $length);
+
         return (int) implode("", $rand);
     }
 }

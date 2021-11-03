@@ -3,7 +3,6 @@
 
 namespace KodeDict\PHPUtil\Traits\RandomGenerator;
 
-
 use Exception;
 
 trait RandomString
@@ -25,6 +24,7 @@ trait RandomString
                 $str .= '';
             }
         }
+
         return $str;
     }
 }
