@@ -1,0 +1,39 @@
+{
+    "name": "kodedict/php-util",
+    "description": "Utility library",
+    "authors": [
+        {
+            "name": "olumayokun olayinka",
+            "email": "dev@kodedict.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "KodeDict\\PHPUtil\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "KodeDict\\PHPUtil\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "phpunit": "vendor/bin/phpunit",
+        "coverage-test": "vendor\\bin\\phpunit --coverage-html /test-reports/coverage",
+        "format": "vendor\\bin\\php-cs-fixer fix"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "prefer-stable": true,
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.2",
+        "phpunit/phpunit": "^9"
+    }
+}
