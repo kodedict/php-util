@@ -14,4 +14,11 @@ class PhpUtilTest extends TestCase
         $bool = PhpUtil::returnTrue();
         $this->assertTrue($bool);
     }
+
+    public function test_random_number()
+    {
+        $rand = PhpUtil::randomNumber('1','5',5);
+
+        $this->assertEquals(5, strlen($rand));
+    }
 }
