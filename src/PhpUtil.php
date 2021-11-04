@@ -7,6 +7,7 @@ namespace KodeDict\PHPUtil;
 
 use KodeDict\PHPUtil\Traits\RandomGenerator\RandomNumber;
 use KodeDict\PHPUtil\Traits\RandomGenerator\RandomString;
+use KodeDict\PHPUtil\Traits\String\NumberToOrdinal;
 use KodeDict\PHPUtil\Traits\UniqueGenerator\UniqueReference;
 
 class PhpUtil
@@ -14,6 +15,7 @@ class PhpUtil
     use RandomNumber;
     use RandomString;
     use UniqueReference;
+    use NumberToOrdinal;
 
     public static function returnTrue(): bool
     {

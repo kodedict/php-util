@@ -37,4 +37,11 @@ class PhpUtilTest extends TestCase
 
         $this->assertStringContainsString('kd_',$uniqueReference);
     }
+
+    public function test_number_to_ordinal()
+    {
+        $ordinalNumber = PhpUtil::numberToOrdinal(1);
+
+        $this->assertEquals('1st', $ordinalNumber);
+    }
 }
