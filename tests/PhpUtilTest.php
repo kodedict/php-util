@@ -44,4 +44,15 @@ class PhpUtilTest extends TestCase
 
         $this->assertEquals('1st', $ordinalNumber);
     }
+
+    public function test_email_validation()
+    {
+        $validateEmailTrue = PhpUtil::validateEmail('devs@kodedict.com');
+
+        $validateEmailFalse = PhpUtil::validateEmail('devs@kodedict.2021');
+
+        $this->assertTrue($validateEmailTrue);
+
+        $this->assertFalse($validateEmailFalse);
+    }
 }
