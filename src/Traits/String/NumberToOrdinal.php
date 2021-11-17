@@ -3,7 +3,6 @@
 
 namespace KodeDict\PHPUtil\Traits\String;
 
-
 use NumberFormatter;
 
 trait NumberToOrdinal
