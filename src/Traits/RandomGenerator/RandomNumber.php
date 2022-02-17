@@ -18,6 +18,12 @@ trait RandomNumber
         shuffle($numbers);
         $rand = array_slice($numbers, 0, $length);
 
-        return (int) implode("", $rand);
+        $randNum = (int) implode("", $rand);
+        
+        if ( strlen($randNum) != $length ){
+            return self::randomNumber($numberFrom, $numberTo, $length);
+        }
+        
+        return $randNum;
     }
 }
