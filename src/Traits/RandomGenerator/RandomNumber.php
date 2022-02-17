@@ -20,7 +20,7 @@ trait RandomNumber
 
         $randNum = (int) implode("", $rand);
         
-        if ( strlen($randNum) != $length ){
+        if (strlen($randNum) != $length) {
             return self::randomNumber($numberFrom, $numberTo, $length);
         }
         
